@@ -1,5 +1,7 @@
 html{
     font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgb(160, 160, 160);
 }
 
 /* Fonts */
@@ -13,6 +15,8 @@ html{
     font-family: "Noto";
     src: url("../fonts/Mulish,Noto_Sans/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format('truetype');
 }
+
+/* Generics */
 
 h2{
     font-size: 1.5rem;
@@ -31,32 +35,125 @@ img{
 
 /* Header */
 header{
-    display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1;
     background-color: #006db0;
-    justify-content: space-between;
-    align-items: center;
     font-family: "Noto";
+    align-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.bar-padding{
+    padding: 1.5rem 1.5rem;
 }
 
 header h1 {
     font-size: 2rem;
-    margin: 2rem 1rem;
-    color: white;
+    float:left;
+    line-height: 1.5rem;
 }
 
-header ul{
-    display: flex;
+
+header a{
+    text-decoration: none;
+    color: inherit;
 }
 
-header li{
-    margin: 2rem 1rem;
+
+.bar-item {
+    height: 100%;
+    float: left;
+    transition: background-color 100ms ease-out;
+    overflow: hidden;
 }
 
-header a {
-    color: white;
-    font-size: 1.75rem;
+.dropdown{
+    float: left;
+    transition: di;
+}
+
+.dropdown:hover > .dropdown-content{
+    display: block;
+}
+
+.dropdown-label{
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.bar-hover:hover{
+    background-color: #003e63;
+}
+
+header .acontainer{
+    float:right;
+}
+
+.dropdown-content{
+    position: absolute;
+    box-sizing: border-box;
+    min-width: 150px;
+    display: none;
+}
+
+.dropdown-content a{
+    float: none;
+    color: black;
+}
+
+.dropdown-item{
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1.25rem;
+    background-color: white;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    min-width: 150px;
+    transition: background-color 100ms ease-out;
+}
+
+.dropdown-item:hover{
+    background-color: #76caff;
+    border-right-color: #7ab4ff;
+}
+
+.sub-dropdown{
+}
+
+.sub-dropdown-item{
+    display: block;
+    padding: .5rem;
+    font-size: 1.25rem;
+    background-color: white;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    min-width: 150px;
+}
+
+.sub-dropdown-content:hover{
+    background-color: #76caff;
+}
+
+.dropdown-content:has(> .sub-dropdown-content:hover){
+    display: block;
+}
+
+.sub-dropdown-content{
+    float:right;
+    display: none;
+}
+
+.dropdown-item:hover + .sub-dropdown-content {
+    display: inline;
 }
 
 .container{
