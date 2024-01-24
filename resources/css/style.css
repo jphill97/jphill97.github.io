@@ -36,6 +36,7 @@ img{
 /* Header */
 header{
     position: fixed;
+    box-sizing: border-box;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -44,6 +45,7 @@ header{
     align-content: center;
     color: white;
     font-size: 1.5rem;
+    border-bottom: 2px solid black;
 }
 
 
@@ -121,7 +123,7 @@ header .acontainer{
 
 .dropdown-item:hover{
     background-color: #76caff;
-    border-right-color: #7ab4ff;
+    /* border-right-color: #7ab4ff; */
 }
 
 .sub-dropdown{
@@ -164,4 +166,40 @@ header .acontainer{
     align-items: center;
     font-family: "Noto";
 }
-/* Underconstruction */
+
+/* Page Content */
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    box-sizing: border-box;
+}
+
+.content-section h1{
+    font-size: 2.5rem;
+}
+
+.content-subsection{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: inherit;
+    justify-content: space-around;
+    padding: 5rem 3rem;
+}
+
+.content-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 2.5rem 1rem;
+}
+
+.content-preview img{
+    max-width: 500px;
+    height: auto;
+    flex-grow: 1;
+}
