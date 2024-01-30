@@ -1,7 +1,12 @@
 html{
     font-size: 16px;
     box-sizing: border-box;
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(15, 15, 15);
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
 }
 
 /* Fonts */
@@ -45,7 +50,7 @@ header{
     align-content: center;
     color: white;
     font-size: 1.5rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 
@@ -159,47 +164,85 @@ header .acontainer{
 }
 
 .container{
-    padding-top: 96px;
+    padding-top: 73px;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     font-family: "Noto";
+    flex-grow: 1;
 }
 
 /* Page Content */
 
+
+
 .content-section{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    display: block;
     box-sizing: border-box;
+    width: 85%;
+    background-color: rgb(41, 41, 41);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-top: 2rem;
+    color:white;
+    flex-grow: 1;
 }
 
 .content-section h1{
     font-size: 2.5rem;
 }
 
-.content-subsection{
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: inherit;
-    justify-content: space-around;
-    padding: 5rem 3rem;
+.subsection-title{
+    font-size: 1.5rem;
+    line-height: 4rem;
 }
 
-.content-preview {
+.content-subsection{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 2.5rem 1rem;
+    box-sizing: inherit;
+    width: 100%;
 }
 
+.project-name{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.project-company{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.project-role{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+.content-preview {
+    width: 60%;
+    padding: 2rem 1.5rem;
+    margin: 2rem 0rem;
+}
+
+.content-left{
+    margin-right: auto;
+    margin-left: 0;
+    background: linear-gradient(90deg, rgb(131, 69, 69) 0%,rgb(41, 41, 41) 100%);
+}
+.content-right{
+    margin-left: auto;
+    margin-right: 0;
+    background: linear-gradient(90deg, rgb(41, 41, 41) 0%, rgb(52, 90, 114) 40%);
+}
+
+.center-content{
+    text-align: center;
+}
 .content-preview img{
-    max-width: 500px;
-    height: auto;
     flex-grow: 1;
+}
+
+.no-subtitle{
+    padding-bottom: 2rem;
 }

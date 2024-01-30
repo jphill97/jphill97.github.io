@@ -1,0 +1,17 @@
+/* Style for placeholder graphic */
+.under-construction{
+    left: 10%;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    font-family: "Noto";
+    text-align: center;
+    color: white;
+}
