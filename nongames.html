@@ -20,44 +20,108 @@
             <div class="dropdown">
                 <a class="dropdown-label bar-padding bar-hover" href="games.html">Games</a>
                 <div class="dropdown-content">
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Unity</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                        </div> -->
-                    </div>
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Unreal</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                        </div> -->
-                    </div>
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Godot</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                        </div> -->
-                    </div>
+                    <a class="dropdown-item"  href="games.html#unity">Unity</a>
+                    <a class="dropdown-item" href="games.html#unreal">Unreal</a>
+                    <a class="dropdown-item"  href="games.html#godot">Godot</a>
                 </div>
             </div>
-            <a class="bar-item bar-padding bar-hover" href="nongames.html">Non-Games</a>
+            <div class="dropdown">
+                <a class="dropdown-label bar-padding bar-hover" href="nongames.html">Non-Games</a>
+                <div class="dropdown-content">
+                    <a class="dropdown-item"  href="nongames.html#paid">Paid Work</a>
+                    <a class="dropdown-item" href="nongames.html#personal">Personal</a>
+                </div>
+            </div>
             <a class="bar-item bar-padding bar-hover" href="contact.html">Contact</a>
         </div>
     </header> 
     
-    <div class="under-construction">
-        <div>
-            <img src="resources/images/construction.png" />
-            <h2>Portfolio still under construction...</h2>
-            <h3>Check back again soon!</h3>
+    
+    <div class="container">
+        <div class="content-section">
+            <div class="content-subsection">
+                <h1 class="no-subtitle" id="paid">Paid Work</h1>
+                <div class="content-preview content-right">
+                    <div class="content-wrapper content-slideout">
+                        <div>
+                            <h3>Involvement Timeline:</h3>
+                            <h4>June 2019 - August 2019</h4>
+                        </div>
+                        <div>
+                            <h3>Job description:</h3>
+                            <p>Intern position, assigned to a cloud-networking team to assist with cloud platform maintenance. Worked alongside a full-time developer to build a stand-alone tool for 
+                                monitoring vSRX gateway stats, including packet-loss, up/downtime, dataflow volume, and error reporting. Worked with the MEAN technology stack. Primarily focused on front-end 
+                                implementaion of backend systems built by partner.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Technologies Utilized:</h3>
+                            <h4>MongoDB, Express, Angular, Node.js</h4>
+                        </div>
+                        <div>
+                            <h3>See More:</h3>
+                            <h4>-</h4>
+                        </div>
+                    </div>
+                    <button type="button" class="content-button  content-button-left">
+                        <img src="resources\images\chevron-left.svg" />
+                    </button>
+                    <div class="content-wrapper content-base">
+                        <div class="center-content">
+                            <img src="resources/images/construction.png" />
+                            <h2 class="project-name">VSRX Gateway Monitoring</h2>
+                            <h3 class="project-company">IBM</h3>
+                            <h4 class="project-role">Full Stack Developer</h4>
+                        </div>
+                        <p class="content-description"> A montioring tool for IBM's cloud platform, specifically vSRX gateways employed by IBM's cloud services. Designed to assist the cloud team with debugging and resolving 
+                            potential hardware issues as they happen. This was an internship role, in which I was partnered with 5 full-time employees to deliver this tool. All technologies utilzied in the production of this tool 
+                            were learned on the job, as needed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-subsection">
+                <h1 class="no-subtitle" id="personal">Personal Projects</h1>
+                <div class="content-preview content-left">
+                    <div class="content-wrapper content-base">
+                        <div class="center-content">
+                            <img src="resources/images/construction.png" />
+                            <h2 class="project-name">This Website</h2>
+                            <h3 class="project-company">-</h3>
+                            <h4 class="project-role">Web Developer</h4>
+                        </div>
+                        <p class="content-description">The Godot redesign of Gamechngrz: Universe takes the core principles of the original Unity game, and abstracts it into a platform, rather than a 
+                            single game. Content is presented not through gameplay or thematic events but instead a unified menu system, complete with live updated goals and a sortable, modern UI. This redesign was intended
+                            to bring the project more in-line with other game and software suites the current generation of students are familiar with.
+                        </p>
+                    </div>
+                    <button type="button" class="content-button content-button-right">
+                        <img src="resources\images\chevron-right.svg" />
+                    </button>
+                    <div class="content-wrapper content-slideout">
+                        <div>
+                            <h3>Involvement Timeline:</h3>
+                            <h4>June 2020 - March 2021</h4>
+                        </div>
+                        <div>
+                            <h3>Job description:</h3>
+                            <p>Responsible for all technological aspects of this game, including writing all gameplay and UI scripts, creation of webservices,
+                                and management of databases. Collaborated with a singular artist to design all gameplay systems and implement all the art present. Interpeted
+                                research data to inform game designs (relating to career aptitudes and student interests). Managed and mainatined technical documentation.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Technologies Utilized:</h3>
+                            <h4>Unity, MySQL, PHP</h4>
+                        </div>
+                        <div>
+                            <h3>See More:</h3>
+                            <h4>-</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

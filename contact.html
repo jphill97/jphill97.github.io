@@ -20,32 +20,9 @@
             <div class="dropdown">
                 <a class="dropdown-label bar-padding bar-hover" href="games.html">Games</a>
                 <div class="dropdown-content">
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Unity</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                            <a class="sub-dropdown-item" href="#">UPS</a>
-                        </div> -->
-                    </div>
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Unreal</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                            <a class="sub-dropdown-item" href="#">Lake Little</a>
-                        </div> -->
-                    </div>
-                    <div class="sub-dropdown" >
-                        <a class="dropdown-item" id="unity" href="#">Godot</a>
-                        <!-- <div class="sub-dropdown-content">
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                            <a class="sub-dropdown-item" href="#">MSU</a>
-                        </div> -->
-                    </div>
+                    <a class="dropdown-item"  href="games.html#unity">Unity</a>
+                    <a class="dropdown-item" href="games.html#unreal">Unreal</a>
+                    <a class="dropdown-item"  href="games.html#godot">Godot</a>
                 </div>
             </div>
             <a class="bar-item bar-padding bar-hover" href="nongames.html">Non-Games</a>
@@ -53,12 +30,21 @@
         </div>
     </header> 
     
-    <div class="under-construction">
-        <div>
-            <img src="resources/images/construction.png" />
-            <h2>Portfolio still under construction...</h2>
-            <h3>Check back again soon!</h3>
-        </div>
+    
+    <div class ="under-construction">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="contact-form">
+                    <input  id="form-items" type="hidden" name="access_key" value="47374b85-1d0a-4889-a345-fb43fe7918b4">
+                    <h3>Your Name</h3>
+                    <input  id="form-items" type="text" name="name" required>
+                    <h3>Your Email</h3>
+                    <input  id="form-items" type="email" name="email" required>
+                    <h3>Message</h3>
+                    <textarea  id="form-items" name="message" required></textarea>
+                    <button id="form-items" type="submit">Submit Form</button>
+                </div>
+            </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
     </div>
 </body>
 </html>
