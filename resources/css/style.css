@@ -381,3 +381,11 @@ header .acontainer{
     min-height: 200px;
     max-height: 600px;
 }
+
+.personal-desc h3{
+    max-width: 80%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
